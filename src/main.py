@@ -1,5 +1,5 @@
-from side.side_gui import side_gui
-from front.front_gui import front_gui
+
+from front.gui import gui
 import socket
 from time import sleep
 
@@ -17,7 +17,7 @@ except:
 if connect:
     print("Successfully connected to duck!")
 if __name__ == "__main__":
-    front_gui(s)
+    gui(s)
     print("disconnecting...")
     try:
         s.send(bytes("end".encode('utf-8')))

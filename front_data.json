@@ -22,5 +22,11 @@
         "shoulder_nose_shoulder":85,
         "left_shoulder":315,
         "right_shoulder":45
+    },
+    {
+        "name":"p",
+        "shoulder_nose_shoulder":86.91088340999588,
+        "left_shoulder":316.89000778183583,
+        "right_shoulder":44.54958839567877
     }
 ]
