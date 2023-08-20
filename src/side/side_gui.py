@@ -5,7 +5,7 @@ import cv2
 import json
 import time
 from PIL import Image, ImageTk
-from side.side_pose_detector import main, run
+from front.pose_detector import main, run
 
 LIGHT_MODE = {
     "bg": "white",
@@ -274,7 +274,7 @@ class SideGUI:
     def switch_to_front(self):
         self.root.destroy()
 
-        from src.front.front_gui import front_gui   # lazy import to avoid circular import
+        from front.gui import front_gui   # lazy import to avoid circular import
         front_gui()
 
     def __del__(self):
